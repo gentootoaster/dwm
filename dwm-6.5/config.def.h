@@ -14,10 +14,10 @@ static const int topbar             = 1;     /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrainsMono:style=Bold:size=14" };
 static const char dmenufont[]       = "JetBrainsMono:style=Bold:size=14";
 static const char col_gray1[]       = "#2e3440";
-static const char col_gray2[]       = "#d8dee9";
+static const char col_gray2[]       = "#2e3440";
 static const char col_gray3[]       = "#d8dee9";
-static const char col_gray4[]       = "#2e3440";
-static const char col_cyan[]        = "#88c0d0";
+static const char col_gray4[]       = "#d8dee9";
+static const char col_cyan[]        = "#4c566a";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -96,9 +96,9 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-        { MODKEY,                       XK_s,      show,           {0} },
-        { MODKEY|ShiftMask,             XK_s,      showall,        {0} },
-        { MODKEY,                       XK_h,      hide,           {0} },
+        { MODKEY,                       XK_a,      show,           {0} },
+        { MODKEY|ShiftMask,             XK_a,      showall,        {0} },
+        { MODKEY,                       XK_d,      hide,           {0} },
         { MODKEY,                       XK_minus,  setgaps,        {.i = -1 } },
 	{ MODKEY,                       XK_equal,  setgaps,        {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
